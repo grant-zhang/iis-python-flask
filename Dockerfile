@@ -26,5 +26,3 @@ RUN c:\Windows\System32\inetsrv\appcmd.exe unlock config -section:system.webServ
 
 # copy sample code 
 COPY home c:/inetpub/wwwroot
-
-CMD [""]
