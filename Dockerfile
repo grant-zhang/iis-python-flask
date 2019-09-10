@@ -1,6 +1,8 @@
 # escape=`
 FROM python:3.7.4-windowsservercore-1803
 
+LABEL maintainer="dayusoft@hotmail.com"
+
 # enable IIS
 RUN powershell -Command `
     Add-WindowsFeature Web-Server; `
@@ -24,3 +26,5 @@ RUN c:\Windows\System32\inetsrv\appcmd.exe unlock config -section:system.webServ
 
 # copy sample code 
 COPY home c:/inetpub/wwwroot
+
+CMD [""]
